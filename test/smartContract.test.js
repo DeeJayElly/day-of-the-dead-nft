@@ -1,24 +1,24 @@
-const SmartContract = artifacts.require("./SmartContract.sol");
+const NFT = artifacts.require("./NFT.sol");
 
 require("chai").use(require("chai-as-promised")).should();
 
-contract("SmartContract", (accounts) => {
-  let smartContract;
+contract("NFT", (accounts) => {
+  let nft;
 
   before(async () => {
-    smartContract = await SmartContract.deployed();
+    nft = await NFT.deployed();
   });
 
-  describe("smartContract deployment", async () => {
+  describe("NFT deployment", async () => {
     it("deploys successfully", async () => {
-      const address = await smartContract.address;
+      const address = await nft.address;
       assert.notEqual(address, 0x0);
       assert.notEqual(address, "");
     });
 
     it("has correct name", async () => {
-      const name = await smartContract.name();
-      assert.equal(name, "Smart Contract");
+      const name = await nft.name();
+      assert.equal(name, "NFT");
     });
   });
 });
