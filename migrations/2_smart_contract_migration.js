@@ -1,5 +1,5 @@
-const NFT = artifacts.require("NFT");
+const DayOfTheDeadNFT = artifacts.require("DayOfTheDeadNFT");
 
 module.exports = function (deployer) {
-  deployer.deploy(NFT);
+  deployer.deploy(DayOfTheDeadNFT);
 };
