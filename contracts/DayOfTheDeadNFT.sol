@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity 0.8.7;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NFT is ERC721Enumerable, Ownable {
+contract DayOfTheDeadNFT is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string public baseURI;
   string public baseExtension = ".json";
   string public notRevealedUri;
-  uint256 public cost = 1 ether;
-  uint256 public maxSupply = 777;
+  uint256 public cost = 0.0777 ether;
+  uint256 public maxSupply = 7777;
   uint256 public maxMintAmount = 20;
   uint256 public nftPerAddressLimit = 3;
   bool public paused = false;
