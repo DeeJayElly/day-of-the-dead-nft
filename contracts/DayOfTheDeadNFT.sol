@@ -13,9 +13,9 @@ contract DayOfTheDeadNFT is ERC721Enumerable, Ownable {
   string public notRevealedUri;
   uint256 public cost = 0.0777 ether;
   uint256 public maxSupply = 7777;
-  uint256 public maxMintAmount = 20;
+  uint256 public maxMintAmount = 1;
   uint256 public nftPerAddressLimit = 3;
-  bool public paused = false;
+  bool public paused = true;
   bool public revealed = false;
   bool public onlyWhitelisted = true;
   address[] public whitelistedAddresses;
@@ -114,6 +114,10 @@ contract DayOfTheDeadNFT is ERC721Enumerable, Ownable {
 
   function setCost(uint256 _newCost) public onlyOwner() {
     cost = _newCost;
+  }
+
+  function setMaxSupply(uint256 _maxSupply) public onlyOwner() {
+      maxSupply = _maxSupply;
   }
 
   function setmaxMintAmount(uint256 _newmaxMintAmount) public onlyOwner() {
