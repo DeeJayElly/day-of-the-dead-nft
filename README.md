@@ -1,6 +1,6 @@
 # Day Of The Dead NFT
 
-An exclusive collection of 7,777 unique NFTs featuring highly detailed authentic art celebrating the Dia De Las Muertas. This one of a kind investment opportunity on both the Ethereum and Solana blockchains could be an excellent way to diversify your portfolio.
+An exclusive collection of 777 unique NFTs featuring highly detailed authentic art celebrating the Dia De Las Muertas. This one of a kind investment opportunity on both the Ethereum and Solana blockchains could be an excellent way to diversify your portfolio.
 
 To find out more please visit:
 
